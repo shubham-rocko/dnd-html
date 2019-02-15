@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Roboto;
+  font-family: arial;
   font-size: 14px;
   line-height: normal;
 }
@@ -10,8 +10,121 @@ ul.nav li {
   list-style-type: none;
 }
 
+ul.nav li a{
+  text-decoration: none;
+}
+
 figure {
   margin: 0;
   padding: 0;
 }
 
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.navbar-container {
+  /* flex: 1; */
+  background: #009a00;
+  color: #fff;
+  font-size: 16px;
+  width: 250px;
+}
+
+.dnd-container {
+  flex: 4;
+  margin: 10px 50px; 
+}
+
+ul.sidebar-items li{
+  margin: 20px 0;
+}
+
+ul.sidebar-items li a{
+  color: #fff;
+}
+
+ul.sidebar-items li a i{
+  font-size: 20px;
+}
+
+.drag-data {
+  display: flex;
+  margin: 15px -15px;
+}
+
+.example-container {
+  display: flex;
+  flex-direction: column;
+  background: #e0e0e0;
+  border: 1px solid #e0e0e0;
+  padding: 0 15px;
+  width: 200px;
+  margin: 0 5px;
+}
+
+.example-container h2 {
+  font-size: 30px;
+  font-weight: 100;
+  position: relative;
+}
+
+.example-container h2:after {
+  content: "";
+  background: #000;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  top: 30px;
+  left: 0;
+}
+
+.example-list {
+  background: #fff;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.example-box {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.card-wrapper {
+  border: 8px solid #333599;
+  padding: 5px;
+}
+
+.card-labels {
+  background: #009a00;
+  font-size: 13px;
+  color: #fff;
+  padding: 3px 5px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-bottom: 10px
+}
+
+.card-title{
+  margin-bottom: 10px
+}
+
+.card-badges{
+  margin-bottom: 10px;
+}
+
+.card-members ul{
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+
+.card-member{
+  margin: 0 5px;
+}
+
+.card-member img{
+  width: 40px;
+  border-radius: 50%;
+}
